@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:hint="Nuevo Usuario"
+        android:id="@id/txtNuevoUsuario" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cedula"
+        android:id="@+id/txtcedula" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primer nombre"
+        android:id="@id/txtPrimernombre" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo nombre"
+        android:id="@+id/txtSegundoNombre" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primer Apellido"
+        android:id="@id/txtPrimerApellido" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo Apellido"
+        android:id="@id/SegundoApellido" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:hint="Programa"
+        android:id="@+id/txtPrograma" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nueva Contraseña"
+        android:id="@+id/txtNuevaContraseña" />
+
+    <Button
+        android:text="Eliminar Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/BtnEliminarUsuario" />
+    
+
+   
+
+</LinearLayout>
