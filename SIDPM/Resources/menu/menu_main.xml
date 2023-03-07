@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android ="http://schemas.android.com/apk/res/android">
+
+	<item
+	  android:id="@+id/icActualizarADmon"
+	  android:icon="@mipmap/ic_add"
+	  android:showAsAction="ifRoom"
+	  android:title="Registrar" />
+	<item
+  android:id="@+id/icEliminarAdmon"
+  android:icon="@mipmap/ic_update"
+  android:showAsAction="ifRoom"
+  android:title="Registrar" />
+	<item
+  android:id="@+id/icPeticiones"
+  android:icon="@mipmap/ic_delete"
+  android:showAsAction="ifRoom"
+  android:title="Registrar" />
+	<item
+  android:id="@+id/icRegistrar"
+  android:icon="@mipmap/ic_peticiones"
+  android:showAsAction="ifRoom"
+  android:title="Registrar" />
+	<item
+  android:id="@+id/icReporteAdmon"
+  android:icon="@mipmap/ic_reporte"
+  android:showAsAction="ifRoom"
+  android:title="Registrar" />
+	<item
+  android:id="@+id/icCerrarSesion"
+  android:icon="@mipmap/ic_cerrar"
+  android:showAsAction="ifRoom"
+  android:title="CerrarSesion" />
+</menu>

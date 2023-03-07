@@ -9,12 +9,13 @@ using AndroidX.AppCompat.App;
 namespace SIDPM
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+    public class MainActivity : Activity
     {
         EditText txtUsuario;
         EditText txtContraseña;
         Button btnBuscar;
         Button btnRegistrar;
+        Toolbar toolbar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,6 +32,51 @@ namespace SIDPM
             btnBuscar.Click += btnBuscar_Click;
             btnRegistrar.Click += BtnRegistrar_Click;
 
+            //Toolbar
+
+            toolbar = FindViewById<Toolbar>(Resource.Id.toolbarMenuMain);
+
+            SetActionBar(toolbar);
+            ActionBar.Title = "Menu";
+
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.icRegistrar:
+                    Toast.MakeText(this,"Agregar!",ToastLength.Short).Show();
+                    SetContentView(Resource.Layout.Registrar);
+                    break;
+                case Resource.Id.icActualizarADmon:
+                    Toast.MakeText(this, "Actualizar!", ToastLength.Short).Show();
+                    SetContentView(Resource.Layout.actualizarAdmon);
+                    break;
+                case Resource.Id.icEliminarAdmon:
+                    Toast.MakeText(this, "Eliminar!", ToastLength.Short).Show();
+                    SetContentView(Resource.Layout.eliminarAdmon);
+                    break;
+                case Resource.Id.icPeticiones:
+                    Toast.MakeText(this, "Peticiones!", ToastLength.Short).Show();
+                    SetContentView(Resource.Layout.peticiones);
+                    break;
+                case Resource.Id.icReporteAdmon:
+                    Toast.MakeText(this, "Reportes!", ToastLength.Short).Show();
+                    SetContentView(Resource.Layout.reporteAdmon);
+                    break;
+                case Resource.Id.icCerrarSesion:
+                    Toast.MakeText(this, "Login!", ToastLength.Short).Show();
+                    SetContentView(Resource.Layout.activity_main);
+                    break;
+            }
+            return base.OnOptionsItemSelected(item);
         }
 
         private void BtnRegistrar_Click(object sender, System.EventArgs e)
