@@ -31,10 +31,10 @@ namespace SIDPM
 
             txtNuevoUsuario = FindViewById<EditText>(Resource.Id.txtNuevoUsuario);
             txtcedula = FindViewById<EditText>(Resource.Id.txtcedula);
-            txtPrimerNombre = FindViewById<EditText>(Resource.Id.txtPrimerNombre);
+            txtPrimerNombre = FindViewById<EditText>(Resource.Id.txtPrimernombre);
             txtSegundoNombre = FindViewById<EditText>(Resource.Id.txtSegundoNombre);
             txtPrimerApellido = FindViewById<EditText>(Resource.Id.txtPrimerApellido);
-            txtSegundoApellido = FindViewById<EditText>(Resource.Id.txtSegundoApellido);
+            txtSegundoApellido = FindViewById<EditText>(Resource.Id.txtSegundoNombre);
             txtPrograma = FindViewById<EditText>(Resource.Id.txtPrograma);
             txtNuevaContraseña = FindViewById<EditText>(Resource.Id.txtNuevaContraseña);
             BtnRegistrarUsuario = FindViewById<Button>(Resource.Id.BtnRegistrarUsuario);

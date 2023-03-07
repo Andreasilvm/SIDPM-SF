@@ -24,13 +24,13 @@ namespace SIDPM
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
-            txtUsuario = FindViewById<EditText>(Resource.Id.txtUsuario);
-            txtContraseña = FindViewById<EditText>(Resource.Id.txtContraseña);
-            btnBuscar = FindViewById<Button>(Resource.Id.txtContraseña);
-            btnRegistrar = FindViewById<Button>(Resource.Id.btnRegistrarse);
+            //txtUsuario = FindViewById<EditText>(Resource.Id.txtUsuario);
+            //txtContraseña = FindViewById<EditText>(Resource.Id.txtContraseña);
+ //btnBuscar = FindViewById<Button>(Resource.Id.txtContraseña);
+            //btnRegistrar = FindViewById<Button>(Resource.Id.btnRegistrarse);
 
-            btnBuscar.Click += btnBuscar_Click;
-            btnRegistrar.Click += BtnRegistrar_Click;
+            //btnBuscar.Click += btnBuscar_Click;
+            //btnRegistrar.Click += BtnRegistrar_Click;
 
             //Toolbar
 

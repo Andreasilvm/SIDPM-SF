@@ -10,19 +10,20 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:hint="Nuevo Usuario"
-        android:id="@id/txtNuevoUsuario" />
+        android:id="@+id/txtNuevoUsuario" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cedula"
-        android:id="@+id/txtcedula" />
+        android:id="@+id/txtcedulaA" />
+    
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Primer nombre"
-        android:id="@id/txtPrimernombre" />
+        android:id="@+id/txtPrimernombre" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
@@ -34,13 +35,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Primer Apellido"
-        android:id="@id/txtPrimerApellido" />
+        android:id="@+id/txtPrimerApellido" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Segundo Apellido"
-        android:id="@id/SegundoApellido" />
+        android:id="@+id/SegundoApellido" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
@@ -51,16 +52,12 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nueva Contraseña"
+        android:hint="Nueva_Contraseña"
         android:id="@+id/txtNuevaContraseña" />
 
     <Button
         android:text="Eliminar Usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@id/BtnEliminarUsuario" />
-    
-
-   
-
+        android:id="@+id/BtnEliminarUsuario" />
 </LinearLayout>

@@ -10,7 +10,7 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:hint="Nuevo Usuario"
-        android:id="@id/txtNuevoUsuario" />
+        android:id="@+id/txtNuevoUsuario" />
     <EditText
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
         android:text="Solicitar reporte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@id/Btnreporte" />
+        android:id="@+id/Btnreporte" />
     
 
 </LinearLayout>
